@@ -91,7 +91,7 @@ html, body{
    font-weight: 400;
    color: #474747;
  }
-
+.fa { font-family: 'FontAwesome' !important; }
 
 
  /* GRID */
@@ -189,7 +189,7 @@ nav ul li {
   font-family: 'Muli', sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding: 10px 15px;
+  padding: 10px 80px;
   letter-spacing: 1px;
   color: #fff;
 }
@@ -232,7 +232,7 @@ nav a:hover {
     text-align: center;
     font-size: 1em;
     background-color: #f9f9f9;
-    padding-top: 150px;
+    padding-top: 100px;
   }
   .menu {
     background-color: #FFFFFF;
@@ -261,15 +261,14 @@ nav a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 50px;
+  padding-top: 1.5em;
 }
 .intro span {
-  font-family: "Parisienne", cursive;
+  font-family: 'Parisienne', cursive;
   font-size: 1.15em;
   color: #FBC26E;
 }
 .intro h2 {
-  padding-top: 25px;
   text-align: center;
 }
 .intro p {
@@ -285,6 +284,7 @@ nav a:hover {
 .casestudies {
   list-style-type: none;
   margin-top: 50px;
+  min-height: 500px;
 }
 .casestudies a {
   text-decoration: none;
