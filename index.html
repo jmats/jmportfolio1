@@ -16,7 +16,7 @@
  <!-- CSS -->
  <link rel="stylesheet" href="css/normalize.css">
  <link rel="stylesheet" href="css/style.css">
- <link rel="stylesheet" href="css/font-awesome.css">
+ <link rel="stylesheet" href="css/font-awesome.css"> 
  <link rel="stylesheet" href="css/animate.css">
 
 </head>
@@ -28,21 +28,18 @@
 <!-- Menu -->
 <nav>
 <div class="menu">
-  <div class="mobile-icon">MENU<hr></div>
-  <div id="logo"><img src="images/logosignature.png" alt="JM"/></div>
-  <div class="nav">
-    <ul>
-        <li><a href="work.html">work</a></li>
-        <li><a href="about.html">about</a></li>
-        <li><a href="home.html">home</a></li>
-    </ul>
-  </div>
+  <div id="mobile-icon">MENU<hr></div>
+  <ul>
+    <li><a href="work.html">work</a></li>
+    <li><a href="about.html">about</a></li>
+    <li><a href="home.html">home</a></li>
+  </ul>
 </div>
 </nav>
 
 <!-- Intro -->
 <div class="intro">
-  <img id="logolarge" src="images/logosignature.png" />
+  <img id="signaturelarge" src="images/signature.png" />
   <br>
   <div id ="title1"><h2>product manager<br><span> & </span>ux designer</h2></div>
   <div id ="title2"><h2>product manager<span> & </span>ux designer</h2></div>  <hr>
@@ -132,6 +129,7 @@
  </footer>
 <!-- END FOOTER -->
 
+
 <!-- CHANGE MENU BG ON SCROLL -->
 <script src="js/jquery-3.1.0.slim.min.js"></script>
 <script type="text/javascript">
@@ -152,13 +150,16 @@ scrollTop : $(this.hash).offset().top
 </script>
 
 
+
 <!-- RESPONSIVE MENU -->
+
 <script>
 $(document).ready(function(){
-	
-	$('.mobile-icon').click( function() {
-		$('nav ul').toggleClass("showing");
-	});
+  
+  $('#mobile-icon').click( function() {
+    $('nav ul').toggleClass("showing");
+        // console.log('working');
+  });
 
 });
 </script>
