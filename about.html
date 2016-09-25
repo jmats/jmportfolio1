@@ -1,0 +1,174 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+ <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Julia Matsuoka | About</title>
+
+ <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/about.css">
+ <link rel="stylesheet" href="css/font-awesome.css">
+ <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+<!-- HEADER -->
+<header>
+<!-- Menu -->
+<nav>
+<div class="menu">
+  <!-- logo -->
+  <div class="mobile-icon">
+  	<img src="images/mobilelogo.png">
+  </div> 
+  <!-- Navigation -->
+    <ul>
+  	<li id="logo"><a href="index.html" class="logo"><img src="images/BLAHBLAH.png" alt="JM" /></a></li>
+        <li><a href="work.html">work</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="index.html">home</a></li>
+    </ul>
+</div>
+</nav>
+
+<!-- COVER -->
+ <div class="container cover">
+      <h2>about us</h2>
+  </div>
+</header>
+<!-- END COVER -->
+
+
+<!-- MAIN -->
+<main>
+<!-- About Us -->
+<section class="aboutus">
+  <div class="container">
+	 <p>Valonu’s mission is to provide menstrual cups and female-health resources to eligible organizations around the world. 
+	 <br>We are a facilitator of resources and a builder of partnerships.</p>
+  </div>
+</section>
+
+<!-- Meet The Team -->
+<section class="meetteam">
+  <div class="container">
+    <h2>meet the team</h2>
+     <img src="images/triangledarkblue.png" />
+  </div>
+</section>
+<section class="teamphotos">
+<div class="container">
+
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/Julia.png"></div>
+ 	<h5>JULIA ALPHA</h5>
+ 	<h6>CO-FOUNDER + CEO</h6>
+ 	</div>
+ </div>
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/Grace.png"></div>
+ 	<h5>GRACE BETA</h5>
+ 	<h6>CO-FOUNDER + COO</h6>
+ 	</div>
+ </div>
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/stephen.png"></div>
+ 	<h5>STEPHEN DELTA</h5>
+ 	<h6>CO-FOUNDER + CFO</h6>
+ 	</div>
+ </div>
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/Catherine.png"></div>
+ 	<h5>CATHERINE GAMMA</h5>
+ 	<h6>VP INTERNATIONAL DEVELOPMENT</h6>
+ 	</div>
+ </div>
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/Annie.png"></div>
+ 	<h5>ANNIE THETA</h5>
+ 	<h6>COMMUNITY MANAGER</h6>
+ 	</div>
+ </div>
+ <div class="content-item">
+ 	<div class="item-box">
+ 	<div id="profileimg"><img src="images/Gloria.png"></div>
+ 	<h5>GLORIA TAU</h5>
+ 	<h6>AVP PARTNERSHIPS</h6>
+ 	</div>
+ </div>
+</div>
+</section>
+
+
+</main>
+<!-- END MAIN -->
+
+
+<!-- Footer -->
+<footer>
+   <div class="container footer-nav-block">
+       <div class="left-footer-block one-third">
+          <a href="index.html"><img id="footerlogo" src="images/logowhite.png" alt="Valonu" /></a>
+       </div>
+       <div class="link-block middle-footer-block one-third">
+         <p class="copyright-block">&copy; 2016 &middot; Valonu &middot; ALL RIGHTS RESERVED</p>
+       </div>
+       <nav class="right-footer-block one-third">
+        <ul>
+           <li><a href="#"><i class="fa fa-facebook-square"></i></li>
+           <li><a href="#"><i class="fa fa-twitter-square"></i></li>           
+           <li><a href="#"><i class="fa fa-instagram"></i></li>
+           <li><a href="#"><i class="fa fa-envelope-o"></i></li>
+        </ul>
+       </nav>
+   </div>
+ </footer>
+
+
+<!-- CHANGE MENU BG ON SCROLL -->
+<script src="js/jquery-3.1.0.slim.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function() {
+if ($(window).scrollTop() > 10 ){
+$('.menu').addClass('scrolling');
+} else {
+$('.menu').removeClass('scrolling');
+}; 
+});
+
+$('.scroll').on('click', function(e){ 
+e.preventDefault()
+$('html, body').animate({
+scrollTop : $(this.hash).offset().top
+}, 1500);
+});
+</script>
+
+
+<!-- RESPONSIVE MENU -->
+<script>
+$(document).ready(function(){
+	
+	$('.mobile-icon').click( function() {
+		$('nav ul').toggleClass("showing");
+	});
+
+});
+</script>
+
+
+ </body>
+ </html>

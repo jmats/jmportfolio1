@@ -1,0 +1,160 @@
+ <!DOCTYPE html>
+ <html lang="en-us">
+ <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Valonu | Resources</title>
+
+ <!-- Google Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Prata" rel="stylesheet">
+
+ <link href="https://fonts.googleapis.com/css?family=Prata|Quattrocento+Sans:400,700" rel="stylesheet">
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/resources.css">
+ <link rel="stylesheet" href="css/font-awesome.css">
+ <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+<!-- HEADER -->
+<header>
+<!-- Menu -->
+<nav>
+<div class="menu">
+  <!-- logo -->
+  <div class="mobile-icon">
+  	<img src="images/mobilelogo.png">
+  </div> 
+  <!-- Navigation -->
+    <ul>
+  	<li id="logo"><a href="index.html" class="logo"><img src="images/logowhitedot.png" alt="Valonu" /></a></li>
+        <li><a href="done.html">what we've done</a></li>
+        <li><a href="resources.html">resources</a></li>
+        <li><a href="about.html">about</a></li>
+        <li><a href="partner.html">partner with us</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </ul>
+</div>
+</nav>
+
+<!-- COVER -->
+ <div class="container cover">
+      <h2>resources</h2>
+  </div>
+</header>
+<!-- END COVER -->
+
+
+<!-- MAIN -->
+<main>
+<!-- About Us -->
+<section class="done">
+  <div class="container">
+	 <p>Amazing, life-changing work and research is being done all over the world, and female health research has taken huge strides in recent years. Valonu works closely with educators and health-experts to make sure all our resources are vetted and curated for responsible, impactful change. Join us as a partner organization and we will work together to tailor our resources to fit your communitys’ needs. We’ve also provided educational resources available for the public. Raising awareness and learning about women’s health should be universal!</p>
+  </div>
+</section>
+
+<!-- Partner Organizations -->
+
+<section class="organizations">
+<div class="container">
+
+ <div class="content-item">
+ 	<div class="item-box">
+   <a href="#"><h5>What are menstrual cups?</h5>
+<!--    <a href="#"><i class="fa fa-print"></i>
+   <a href="#"><i class="fa fa-download"></i> -->
+ 	</div>
+ </div>
+
+ <div class="content-item" >
+ 	<div class="item-box" id="purple">
+    <a href="#"><h5>Women's Health 101</h5>
+ 	</div>
+ </div>
+
+ <div class="content-item">
+ 	<div class="item-box" id="purple">
+ 	  <a href="#"><h5>Why women's health?</h5>
+ 	</div>
+ </div>
+
+ <div class="content-item">
+ 	<div class="item-box">
+ 	  <a href="#"><h5>Other menstrual products</h5>
+ 	</div>
+ </div>
+
+  <div class="content-item">
+   <div class="item-box">
+    <a href="#"><h5>Recent News</h5>
+   </div>
+ </div>
+ 
+</div>
+</section>
+
+
+</main>
+<!-- END MAIN -->
+
+
+<!-- Footer -->
+<footer>
+   <div class="container footer-nav-block">
+       <div class="left-footer-block one-third">
+          <a href="index.html"><img id="footerlogo" src="images/logowhite.png" alt="Valonu" /></a>
+       </div>
+       <div class="link-block middle-footer-block one-third">
+         <p class="copyright-block">&copy; 2016 &middot; Valonu &middot; ALL RIGHTS RESERVED</p>
+       </div>
+       <nav class="right-footer-block one-third">
+        <ul>
+           <li><a href="#"><i class="fa fa-facebook-square"></i></li>
+           <li><a href="#"><i class="fa fa-twitter-square"></i></li>           
+           <li><a href="#"><i class="fa fa-instagram"></i></li>
+           <li><a href="#"><i class="fa fa-envelope-o"></i></li>
+        </ul>
+       </nav>
+   </div>
+ </footer>
+
+
+<!-- CHANGE MENU BG ON SCROLL -->
+<script src="js/jquery-3.1.0.slim.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function() {
+if ($(window).scrollTop() > 10 ){
+$('.menu').addClass('scrolling');
+} else {
+$('.menu').removeClass('scrolling');
+}; 
+});
+
+$('.scroll').on('click', function(e){ 
+e.preventDefault()
+$('html, body').animate({
+scrollTop : $(this.hash).offset().top
+}, 1500);
+});
+</script>
+
+
+<!-- RESPONSIVE MENU -->
+<script>
+$(document).ready(function(){
+	
+	$('.mobile-icon').click( function() {
+		$('nav ul').toggleClass("showing");
+	});
+
+});
+</script>
+
+
+ </body>
+ </html>
