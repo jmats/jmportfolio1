@@ -109,7 +109,12 @@ main ul {
  line-height: 1.25em;
  font-weight: 300;
  list-style-type: square;
- list-style-position: inside;
+ list-style-position: inside;  
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 15px;
+ text-align: left;
+ max-width: 85%;
 }
 
 
@@ -305,6 +310,9 @@ nav a:hover {
   padding: 20px;
   margin-top: 20px;
 }
+.overview ul {
+  margin: 0;
+}
 .overviewleft {
   padding-bottom: 40px;
 }
@@ -346,15 +354,11 @@ nav a:hover {
 .approach1 {
   background-color: #F6F6F6;
 }
-.approach1 ul {
-  padding-left: 15px;
-  text-align: left;
-}
 .approach1 img {
   width: 100%;
 }
 #surveybtn {
-  width: 180px;
+  width: 110px;
 }
 #personabtn {
   width: 120px;
@@ -385,10 +389,6 @@ nav a:hover {
 .approach3 {
   background-color: #F6F6F6;
 }
-.approach3 ul {
-  padding-left: 15px;
-  text-align: left;
-}
 #stylebtn {
   margin-top: 20px;
   width: 225px;
@@ -397,11 +397,34 @@ nav a:hover {
   width: 100%;
   padding-bottom: 20px;
 }
-#wireframebtn {
-  width: 150px;
-  margin-bottom: 20px;
+.test1cover, .test2cover {
+  background-color: #F6F6F6;
+  border: 10px solid #00A3D5;
 }
-
+.test1 img, .test2 img {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#test2btn {
+  width: 150px;
+}
+.introducing img {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.moodimage img {
+  width: 100%;
+}
+#valonubtn {
+  padding-top: 30px;
+  width: 210px;
+}
+.next {
+  margin-top: 20px;
+  background-color: #F6F6F6;
+}
 
 
 
@@ -578,12 +601,24 @@ ul.icons li {
     clear: both;
     float: none;
   }
-
   #color {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
+  .test1cover, .test2cover {
+  border: 25px solid #00A3D5;
+  }
+  #intro5 {
+    margin-top: -50px;
+    padding-left: 35px;
+  }
+
+
+
+
+
+
   .socialmedia ul {
     padding-left: 130px;
   }
