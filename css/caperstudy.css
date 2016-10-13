@@ -195,7 +195,6 @@ nav ul {
   -moz-transition: max-height 0.4s;
   -0-transition: max-height 0.4s;
   transition: max-height 0.4s;
-  float: right;
 }
 nav ul li {
   display: inline-block;
@@ -219,11 +218,10 @@ nav a:hover {
   display: none;
   position: relative;
 }
-#logosignature {
+/*#logosignature {
   padding-top: 5px;
   margin-left: 4.25em;
-}
-
+}*/
 
 @media all and (min-width: 67.81em) {
   #mobile-icon { 
@@ -232,9 +230,9 @@ nav a:hover {
 }
 
 @media all and (max-width: 67.81em) {
-  #logosignature {
+/*  #logosignature {
     display: none;
-  }
+  }*/
   #mobile-icon {
     display: block;
     padding-top: 1em;
@@ -417,9 +415,9 @@ nav a:hover {
 .moodimage img {
   width: 100%;
 }
-#valonubtn {
+#caperbtn {
   padding-top: 30px;
-  width: 210px;
+  width: 220px;
 }
 .next {
   margin-top: 20px;
@@ -524,7 +522,7 @@ ul.icons li {
   }
   p {
      font-size: 1.125em; /*18px*/
-     line-height: 1.625em; /*26px*/
+     line-height: 1.875em; /*26px*/
      color: #474747;
   }
   main ul {
@@ -537,6 +535,9 @@ ul.icons li {
   }
   .one-half {
     width: 50%; 
+  }
+    nav ul {
+    float: right;
   }
   .intro {
     background: url(../images/caperstudybanner.png);
@@ -610,7 +611,7 @@ ul.icons li {
   border: 25px solid #00A3D5;
   }
   #intro5 {
-    margin-top: -50px;
+    margin-top: -120px;
     padding-left: 35px;
   }
 

@@ -19,6 +19,8 @@
  <link rel="stylesheet" href="css/font-awesome.css"> 
  <link rel="stylesheet" href="css/animate.css">
 
+ <script src="js/jquery-3.1.0.slim.min.js"></script>
+
 </head>
 
 
@@ -28,10 +30,10 @@
 <!-- Menu -->
 <nav>
 <div class="menu">
-  <div id="mobile-icon">MENU<hr></div>
+  <div id="mobile-icon">MENU <br><hr></div>
   <ul>
     <li><a href="work.html">work</a></li>
-    <li><a href="about.html">about</a></li>
+    <li><a href="#about">about</a></li>
     <li><a href="home.html">home</a></li>
   </ul>
 </div>
@@ -39,12 +41,10 @@
 
 <!-- Intro -->
 <div class="intro">
-  <img id="signaturelarge" src="images/signature.png" />
-  <br>
-  <div id ="title1"><h2>product manager<br><span> & </span>ux designer</h2></div>
-  <div id ="title2"><h2>product manager<span> & </span>ux designer</h2></div>  <hr>
-  <p>Hello! I’m a NYC-based UX/UI designer turned product manager with a background in business development and operations. I thrive on being the diplomat that holds together all stakeholders to create functional, beautiful, human-centered products.</p>
-  <br><a href="work.html" class="btn">VIEW SELECTED WORKS ></a>
+  <img id="signaturelarge" src="images/signaturewhite.png" />
+  <img id="signaturemobile" src="images/signaturemobilewhite.png" />
+  <h2>product manager<span> & </span> designer</h2>
+  <a href="#" class="btn-view">VIEW SELECTED WORKS <i class="fa fa-chevron-right" aria-hidden"true"></i></a>
 </div>
 </header>
 <!-- END HEADER -->
@@ -102,7 +102,7 @@
   <br>Hello! I’m a NYC-based UX/UI designer turned product manager with a background in business development and operations. I thrive on being the diplomat that holds together all stakeholders so we can create functional, beautiful, human-centered products. 
   <br><br>Say hallo! Drop me a line at <a href="mailto:cheers.julia@gmail.com" target="_blank"><span>cheers.julia@gmail.com</span></a>!
   </p>
-  <a href="work.html" class="btn">VIEW MY RESUME <i class="fa fa-file-o" aria-hidden"true"></i></a>
+  <a href="#" class="btn">VIEW MY RESUME <i class="fa fa-file-o" aria-hidden"true"></i></a>
 </section>
 </main>
 <!-- END MAIN -->
@@ -131,8 +131,7 @@
 
 
 <!-- CHANGE MENU BG ON SCROLL -->
-<script src="js/jquery-3.1.0.slim.min.js"></script>
-<script type="text/javascript">
+<script>
 $(window).scroll(function() {
 if ($(window).scrollTop() > 50 ){
 $('.menu').addClass('scrolling');
@@ -140,7 +139,6 @@ $('.menu').addClass('scrolling');
 $('.menu').removeClass('scrolling');
 }; 
 });
-
 $('.scroll').on('click', function(e){ 
 e.preventDefault()
 $('html, body').animate({
@@ -149,10 +147,7 @@ scrollTop : $(this.hash).offset().top
 });
 </script>
 
-
-
 <!-- RESPONSIVE MENU -->
-
 <script>
 $(document).ready(function(){
   
@@ -160,9 +155,10 @@ $(document).ready(function(){
     $('nav ul').toggleClass("showing");
         // console.log('working');
   });
-
 });
 </script>
+
+
 
 
 

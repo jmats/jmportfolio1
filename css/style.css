@@ -64,13 +64,13 @@ html, body{
    font-family: 'Muli', sans-serif;
  }
  h1 {
-   font-family: 'Muli', sans-serif;
+   font-family: 'Lato', sans-serif;
    font-size: 2em; /*32px*/
  }
  h2 {
-   font-family: 'Muli', sans-serif;
+   font-family: 'Lato', sans-serif;
    font-size: 1.75em; /*28px*/
-   font-weight: 400;
+   font-weight: 300;
  }
  h3 {
    font-size: 1.125em; /*18px*/
@@ -121,11 +121,24 @@ html, body{
 .btn {
    background: transparent;
    border-bottom: 2px solid #FBC26E;
-   color:#474747;
+   color:#000000;
    font-family: 'Muli';
    font-size: 0.875em; /*14px*/
    font-weight: 300;
    margin: auto;
+   padding-bottom: 5px;
+   line-height: 35px;
+   text-decoration: none;
+   width: 180px;
+}
+.btn-view {
+   background: transparent;
+   /*border-bottom: 2px solid #FBC26E;*/
+   color:#ffffff;
+   font-family: 'Muli';
+   font-size: 0.75em; /*12px*/
+   font-weight: 300;
+   margin-left: 10%;
    padding-bottom: 5px;
    line-height: 35px;
    text-decoration: none;
@@ -139,7 +152,7 @@ html, body{
   padding: 0;
 }
 .menu {
-   background-color: #F9F9F9;
+   background-color: transparent;
    height: auto;
    position: fixed;
    top: 0;
@@ -151,10 +164,10 @@ html, body{
 }
 .menu a {
   text-decoration: none;
-  color: #474747;
+  color: #fff;
 }
 .scrolling {
-  background-color: #FFFFFF; opacity: 0.95; /*white*/
+  background-color: #474747; opacity: 0.95; /*white*/
   transition-duration: 0.1s;
 }
 nav ul {
@@ -191,13 +204,13 @@ nav a:hover {
   position: relative;
 }
 
-@media all and (min-width: 67.81em) {
+@media all and (min-width: 42.5em) {
   #mobile-icon { 
     display: none; 
   } 
 }
 
-@media all and (max-width: 67.81em) {
+@media all and (max-width: 42.5em) {
   #mobile-icon {
     display: block;
     padding-top: 1em;
@@ -216,13 +229,17 @@ nav a:hover {
     min-height: 200em;
     text-align: center;
     font-size: 1em;
-    background-color: #f9f9f9;
+    background-color: #202020;
     padding-top: 100px;
   }
   .menu {
-    background-color: #FFFFFF;
+    color: #fff;
+    background-color: transparent;
     display: block;
     width: 100%;
+  }
+  hr {
+  border-top: 1px solid #ffffff;
   }
   nav ul li {
     box-sizing: border-box;
@@ -243,14 +260,25 @@ nav a:hover {
 
 /* INTRO */
 .intro {
-  width: 75%;
-  margin: auto;
+  background: url(../images/homebanner2.png);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  width: 100%;
+  z-index: -1;
+  min-height: 600px
 }
 .intro img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 1.5em;
+  padding-top: 15em;
+  padding-left: 10%;
+}
+#signaturelarge {
+  display: none;
 }
 .intro span {
   font-family: 'Parisienne', cursive;
@@ -258,15 +286,19 @@ nav a:hover {
   color: #FBC26E;
 }
 .intro h2 {
-  text-align: center;
-}
-.intro p {
-  padding-top: 20px;
+  text-align: left;
+  padding-left: 10%;
+  padding-top: 1em;
+  padding-bottom: 10%;
+  color: #FFFFFF;
+  font-weight: lighter;
 }
 .intro a:hover {
   color: #FBC26E;
 }
-
+.intro .fa {
+  color: #FBC26E;
+}
 
 
 /* CASE STUDIES */
@@ -482,15 +514,43 @@ ul.icons li {
    .one-fourth {
      width:100%;
    }
-  #title2 {
-    display: none;
-  }
 }
 
-@media all and (min-width: 29.23em) {
-   .one-half {
+@media all and (min-width: 42.5em) {
+  .one-half {
      width: 50%;
-   }
+  }
+  .btn-view {
+     background: transparent;
+     /*border-bottom: 2px solid #FBC26E;*/
+     color:#ffffff;
+     font-family: 'Muli';
+     font-size: 0.875em; /*14px*/
+     font-weight: 300;
+     margin-left: 10%;
+     padding-bottom: 5px;
+     line-height: 35px;
+     text-decoration: none;
+     width: 180px;
+  }
+  #signaturelarge {
+    padding-top: 13em;
+  }
+  .intro {
+     min-height: 800px;
+  }
+  .intro h2 {
+    text-align: left;
+    padding-left: 10%;
+    padding-bottom: 2%;
+    font-size: 38px;
+  }
+  #signaturelarge {
+    display: block;
+  }
+  #signaturemobile {
+    display: none;
+  }
 }
 /*Breakpoint */
 @media all and (min-width: 67.81em) {
@@ -508,24 +568,6 @@ ul.icons li {
   .one-fourth {
     width:21%;
    }
-  #signaturelarge {
-    margin: 0;
-  }
-  #title1 {
-    display: none;
-  }
-  #title2 {
-    display: inline;
-  }
-  .intro {
-    /*padding-left: 150px;*/
-    /*width: 80%;*/
-   }
-  .intro h2 {
-    text-align: left;
-    padding-left: 20px;
-    font-size: 38px;
-  }
   .caperstudy {
     margin-left: 0;
   }
@@ -534,8 +576,9 @@ ul.icons li {
     float: right;
   }
   .about{
-    padding-left: 150px;
     width: 80%;
+    margin: auto;
+    padding-top: 1em;
   }
   .socialmedia ul {
     padding-left: 130px;
