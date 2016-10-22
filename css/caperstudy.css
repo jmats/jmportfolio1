@@ -286,7 +286,7 @@ nav a:hover {
 
 /* INTRO */
 .intro {
-  background: url(../images/caperstudybanner.png);
+  background: url(../images/caperstudybannermobile.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -560,7 +560,6 @@ ul.icons li {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     z-index: -1;

@@ -291,7 +291,6 @@ nav a:hover {
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
   width: 100%;
   z-index: -1;
@@ -521,7 +520,6 @@ ul.icons li {
     -o-background-size: cover;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     width: 100%;
     z-index: -1;
