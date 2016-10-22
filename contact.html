@@ -1,1 +1,122 @@
-signin.html
+ <!DOCTYPE html>
+ <html lang="en-us">
+ <head>
+   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta charset="UTF-8">
+   <title>Caper Case Study</title>
+
+ <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+ 
+ <!-- CSS -->
+ <link rel="stylesheet" href="css/normalize.css">
+ <link rel="stylesheet" href="css/contact.css">
+ <link rel="stylesheet" href="css/font-awesome.css"> 
+ <link rel="stylesheet" href="css/animate.css">
+
+ <!-- GOOGLE FORM CONTACT-->
+<meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform"><meta property="og:image" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform#responses"><meta property="og:image:width" content="200"><meta property="og:image:height" content="200">
+
+
+
+
+</head>
+
+
+<body>
+<!-- HEADER -->
+<header>
+<!-- Menu -->
+<nav>
+<div class="menu">
+  <a href="index.html"><img id="logosignature" src="images/logosignature.png"></a>
+  <div id="mobile-icon">MENU<hr></div>
+  <ul>
+    <li><a href="work.html">WORK</a></li>
+    <li><a href="contact.html">CONTACT</a></li>
+    <li><a href="index.html">HOME</a></li>
+  </ul>
+</div>
+</nav>
+</header>
+
+
+<main>
+<div class="intro container">
+    <h1>Say hello.<br></h1>
+    <h3>Find me on <a href="https://www.linkedin.com/in/juliamatsuoka"><span>LinkedIn</span></a>,  <a href="https://www.instagram.com/julia.mats/"><span>Instagram</span></a>, or email me at <a href="mailto:cheers.julia@gmail.com" target="_blank"><span>cheers.julia@gmail.com</span></a>.
+    <br>Otherwise, drop me a line below.</h3>
+</div>
+
+<div class="contactform container">
+<!-- iFrame redirects user to confirmation page instead of Google confirmation page -->
+    <iframe name="hidden_frame" id="hidden_iframe" style="display:none;" onload="if(submitted)
+              {window.location='confirm.html';}"></iframe>
+<!-- Point the target at the name of the iframe, should test with backbone-type events -->
+    <form role="form" action="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/formResponse" method="POST" id="ss-form" target="hidden_frame" onsubmit="submitted=true;">
+
+    <form>
+    <div>
+      <label for="name">Name</label><input type="text" class="form-control" name="entry.1856128875" value="" id="entry_1856128875" dir="auto" aria-label="Name" title="">
+     </div>
+     <div>
+      <label for="email">Email</label><input type="text" class="formcontrol" name="entry.150906251" value="" id="entry_150906251" dir="auto" aria-label="Email">
+     </div>
+     <div id="message">
+      <label for="message">Your Message</label><br><textarea name="entry.224458628" dir="auto" aria-label="Message"></textarea>
+
+
+      <!-- <input type="text" name="message"> -->
+     </div>
+    </form>
+    <a href="" class="btnsubmit">SAY HELLO</a>
+</div>
+</main>
+
+
+
+<footer>
+  <li class="one-half socialmedia" id="contact">
+    <ul class="icons">
+    <li>
+      <a href="https://www.linkedin.com/in/juliamatsuoka" class="icon alt fa fa-linkedin" target="_blank"></a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/julia.mats/" class="icon alt fa fa-instagram" target="_blank"></a>
+    </li>
+    <li>
+      <a href="mailto:cheers.julia@gmail.com" class="icon alt fa fa-envelope" target="_blank"></a>
+    </li>
+    </ul>
+  </li>
+  <li class="one-half copyright">
+     <p>Designed & Developed &copy; <span>Julia Matsuoka 2016</span></p>
+  </li>
+
+ </footer>
+
+
+
+
+<!-- RESPONSIVE MENU -->
+<script src="js/jquery-3.1.0.slim.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  
+  $('#mobile-icon').click( function() {
+    $('nav ul').toggleClass("showing");
+        // console.log('working');
+  });
+
+});
+</script>
+
+
+
+ </body>
+ </html>

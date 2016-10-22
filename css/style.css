@@ -427,6 +427,7 @@ nav a:hover {
 
 /* ABOUT */
 .about {
+  margin-top: 50px;
   padding: 20px;
 }
 .about > h2 {
@@ -571,6 +572,14 @@ ul.icons li {
   #signaturemobile {
     display: none;
   }
+  .about{
+    width: 80%;
+    margin: auto;
+    padding-top: 50px;
+  }
+  .socialmedia ul {
+    padding-left: 15%;
+  }
 }
 /*Breakpoint */
 @media all and (min-width: 67.81em) {
@@ -595,14 +604,7 @@ ul.icons li {
     margin-right: 0;
     float: right;
   }
-  .about{
-    width: 80%;
-    margin: auto;
-    padding-top: 1em;
-  }
-  .socialmedia ul {
-    padding-left: 17%;
-  }
+
 }
 
 
