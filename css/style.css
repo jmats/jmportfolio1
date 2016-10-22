@@ -146,13 +146,13 @@ footer {
 /* BUTTONS */
 .btn {
    background: transparent;
-   border-bottom: 2px solid #FBC26E;
-   color:#000000;
+   border: 2px solid #FBC26E;
+   color: #FBC26E;
    font-family: 'Lato';
    font-size: 0.875em; /*14px*/
-   font-weight: 300;
+   font-weight: 400;
    margin: auto;
-   padding-bottom: 5px;
+   padding: 10px 15px 10px 15px;
    line-height: 35px;
    text-decoration: none;
    width: 180px;
@@ -291,12 +291,6 @@ nav a:hover {
   text-align: left;
   color: #202020;
   font-weight: 300;
-}
-.intro a:hover {
-  color: #FBC26E;
-}
-.intro .fa {
-  color: #202020;
 }
 
 /* CASE STUDIES */
@@ -444,8 +438,10 @@ nav a:hover {
   color: #006E95;
 }
 .about a:hover {
-  color: #FBC26E;
+  color: #ffffff;
+  background-color: #FBC26E;
 }
+
 
 /* FOOTER */
 footer {
