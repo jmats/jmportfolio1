@@ -286,7 +286,7 @@ nav a:hover {
 
 /* INTRO */
 .intro {
-  background: url(../images/caperstudybannermobile.png);
+  background: url(../images/caperstudybanner.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -294,15 +294,15 @@ nav a:hover {
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  width: 768px;
   z-index: -1;
   opacity: 0.9;
   min-height: 500px;
+  width: 100%;
 }
 .intro h1, h3 {
   color: #ffffff;
   padding: 20px;
-    width: 80%;
+  width: 80%;
 }
 .intro h1 {
   padding-top: 150px;
@@ -311,6 +311,7 @@ nav a:hover {
   line-height: 1.5em;
   font-weight: 300;
 }
+
 /* OVERVIEW */
 .overview {
   min-height: 1000px;
@@ -367,16 +368,16 @@ nav a:hover {
   width: 100%;
 }
 #surveybtn {
-  width: 110px;
+  width: 105px;
 }
 #personabtn {
-  width: 120px;
+  width: 110px;
 }
 #competitivebtn {
-  width: 220px;
+  width: 210px;
 }
 #userbtn {
-  width: 160px;
+  width: 145px;
 }
 .approach2 img {
   width: 100%;
@@ -387,7 +388,7 @@ nav a:hover {
   padding-bottom: 10px;
 }
 #flowsbtn {
-  width: 150px;
+  width: 135px;
 }
 #color  {
   display: block;
@@ -400,7 +401,7 @@ nav a:hover {
 }
 #stylebtn {
   margin-top: 20px;
-  width: 225px;
+  width: 215px;
 }
 .approach4 img {
   width: 100%;
@@ -419,7 +420,7 @@ nav a:hover {
   padding-bottom: 20px;
 }
 #test2btn {
-  width: 150px;
+  width: 140px;
 }
 .introducing img {
   width: 100%;

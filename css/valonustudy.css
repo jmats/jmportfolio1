@@ -358,11 +358,8 @@ nav a:hover {
 .approach1 {
   background-color: #F6F6F6;
 }
-#interviewbtn {
-  width: 220px;
-}
 #competitivebtn {
-  width: 220px;
+  width: 210px;
 }
 #userbtn {
   width: 145px;
@@ -419,7 +416,7 @@ nav a:hover {
   width: 135px;
 }
 .next {
-  margin-top: 20px;
+  margin-top: -5px;
   background-color: #F6F6F6;
 }
 
