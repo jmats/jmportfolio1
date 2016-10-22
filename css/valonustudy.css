@@ -67,46 +67,47 @@ html, body{
    padding: 0;
  }
 body {
- font-family: 'Muli', sans-serif;
+ font-family: 'Merriweather', serif;
+ font-size: 1em;
 }
 h1, h2, h3, h4, h5 {
  font-family: 'Lato', sans-serif;
  font-weight: 700;
 }
 h1 {
- font-size: 2.25em; /*34px*/
+ font-size: 212.5%; /*34px*/
  font-weight: 400;
 }
 h2 {
- font-size: 1.375em; /*22px section headers*/
+ font-size: 137.5%; /*22px section headers*/
+ padding-top: 35px;
 }
 h3 {
- font-size: 1.125em; /*18px banner description*/
+ font-size: 112.5%; /*18px banner description*/
  font-weight: 300;
 }
 h4 {
-  font-size: 1em; /*16px subheaders*/
+  font-size: 100%; /*16px subheaders*/
 }
 h5 {
- font-size: 0.75em; /*12px sub-subheaders CAP*/
+ font-size: 75%; /*12px sub-subheaders CAP*/
 }
 h6 {
- font-family: 'Muli', sans-serif;
- font-size: 1.125em; /*18px quote*/ 
+ font-family: 'Lato', sans-serif;
+ font-size: 112.5%; /*18px quote*/ 
  line-height: 1.5em;
  font-weight: 300;
 }
 p {
- font-size: 0.9375em; /*145x*/
- line-height: 1.5em; /*24px*/
- font-weight: 400;
+ font-size: 87.5%; /*14 px*/
+ line-height: 1.625em; /*24px*/
+ font-weight: 300;
  color: #474747;
 }
-.fa { font-family: 'FontAwesome' !important; }
 main ul {
- font-size: 0.875em; /*14px*/
- font-family: 'Muli', sans-serif;
- line-height: 1.25em;
+ font-size: 87.5%; 
+ font-family: 'Lato', sans-serif;
+ line-height: 1.65em;
  font-weight: 300;
  list-style-type: square;
  list-style-position: inside;  
@@ -116,6 +117,11 @@ main ul {
  text-align: left;
  max-width: 85%;
 }
+footer {
+  font-family: 'Lato', sans-serif;
+}
+.fa { font-family: 'FontAwesome' !important; }
+
 
 
 
@@ -123,8 +129,10 @@ main ul {
  .container {
    margin-right: auto;
    margin-left: auto;
-   padding-top: 1em;
-   padding-bottom: 1em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   margin-top: 2em;
+   margin-bottom: 2em;
    position: relative;
    width: 85%;
  }
@@ -151,7 +159,7 @@ main ul {
    color:#474747;
    display: block;
    margin: auto;
-   font-family: 'Muli';
+   font-family: 'Lato';
    font-size: 0.875em; /*14px*/
    font-weight: 300;
    padding-bottom: 2.5px;
@@ -168,9 +176,7 @@ main ul {
 }
 .menu {
    background-color: #F9F9F9;
-   display: block;
    height: auto;
-   padding-bottom: 1em;
    position: fixed;
    top: 0;
    width: 100%;
@@ -183,19 +189,13 @@ main ul {
   text-decoration: none;
   color: #474747;
 }
-.logo {
-  display: block;
-  text-align: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-}
 .scrolling {
   background-color: #FFFFFF; opacity: 0.95; /*white*/
   transition-duration: 0.1s;
 }
 nav ul {
   overflow: hidden;
-  text-align: center;
+  text-align:right;
   padding: 1%;
   margin-left: 0;
   -webkit-transition: max-height 0.4s;
@@ -205,26 +205,87 @@ nav ul {
   transition: max-height 0.4s;
 }
 nav ul li {
-  display: inline;
+  display: inline-block;
   text-transform: uppercase;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding-right: 10%;
-  padding-left: 10%;
-  margin-right: auto;
-  margin-left: auto;
+  padding: 10px 80px;
   letter-spacing: 1px;
-  color: #fff;
+  color: #ffffff;
 }
 nav a:hover {
    color: #FBC26E;
 }​
+.mobile-icon {
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  color: #fff;
+  display: none;
+  position: relative;
+}
+#logosignature {
+  padding-top: 5px;
+  margin-left: 4.25em;
+}
 
+@media all and (min-width: 67.81em) {
+  #mobile-icon { 
+    display: none; 
+  } 
+}
+
+@media all and (max-width: 67.81em) {
+  #logosignature {
+    display: none;
+  }
+  #mobile-icon {
+    display: block;
+    padding-top: 1em;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+  }
+    nav ul {
+    max-height: 0px;      
+    padding: 0px;
+  }
+  /* MOBILE NAV  */
+  .showing {
+    min-height: 200em;
+    text-align: center;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    padding-top: 100px;
+  }
+  .menu {
+    background-color: #FFFFFF;
+    display: block;
+    width: 100%;
+  }
+  nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 30px;
+    text-align: center;
+  }
+  nav ul li a {
+      color: #474747;
+      text-decoration: none;
+  }
+  nav ul li:hover {
+      width: 100%;
+      color: #FBC26E;
+    }
+}
 
 /* INTRO */
 .intro {
-  background: url(../images/caperstudybannermobile.png);
+  background: url(../images/valonustudybanner.png);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -240,7 +301,7 @@ nav a:hover {
 .intro h1, h3 {
   color: #ffffff;
   padding: 20px;
-    width: 80%;
+  width: 80%;
 }
 .intro h1 {
   padding-top: 150px;
@@ -267,10 +328,13 @@ nav a:hover {
   margin-right: auto;
   margin-left: auto;
   display: block;
-  width: 65%;
+  width: 95%;
 }
 .overviewright {
   padding-bottom: 40px;
+}
+.overviewright p {
+  font-family: 'Lato', sans-serif;
 }
 
 /* STORY QUOTE */
@@ -278,7 +342,6 @@ nav a:hover {
   background-color: #00597A;
   clear: both;
   color: #ffffff;
-  font-family: 'Muli', sans-serif;
   font-weight: 300;
   padding-left: 20px;
   padding-right: 20px;
@@ -287,84 +350,73 @@ nav a:hover {
   text-align: center;
 }
 
-/* CHALLENGE */
-.challenge img {
-  width: 100%;
+/*CHALLENGE*/
+.challenge {
+  margin-bottom: 2em;
 }
-.goals {
-  padding-left: 10px;
-}
-
 /* APPROACH */
 .approach1 {
   background-color: #F6F6F6;
 }
-.approach1 img {
-  width: 100%;
-}
-#surveybtn {
-  width: 110px;
-}
-#personabtn {
-  width: 120px;
+#interviewbtn {
+  width: 220px;
 }
 #competitivebtn {
   width: 220px;
 }
 #userbtn {
-  width: 160px;
+  width: 145px;
 }
 .approach2 img {
-  width: 100%;
-}
-#notebook, #flat1, #flat2 {
-  float: left;
-  width: 100%;
-  padding-bottom: 10px;
-}
-#flowsbtn {
-  width: 150px;
-}
-#color  {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 100%;
 }
 .approach3 {
   background-color: #F6F6F6;
 }
-#stylebtn {
-  margin-top: 20px;
-  width: 225px;
+#identitylogo {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 40px;
+}
+#brainstorm1, #brainstorm2 {
+  float: left;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#color, #logoprogress {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+.valonutype {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 10px;
 }
 .approach4 img {
   width: 100%;
   padding-bottom: 20px;
 }
-.test1cover, .test2cover {
+.introducing {
   background-color: #F6F6F6;
-  border: 10px solid #00A3D5;
-}
-.test1 img, .test2 img {
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-#test2btn {
-  width: 150px;
 }
 .introducing img {
   width: 100%;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.moodimage img {
+.valonufinal img {
   width: 100%;
 }
-#valonubtn {
+#caperbtn {
   padding-top: 30px;
-  width: 210px;
+  width: 135px;
 }
 .next {
   margin-top: 20px;
@@ -447,85 +499,47 @@ ul.icons li {
 
 @media all and (min-width: 48em) { /*768px*/   
   h1 {
-     font-size: 3.25em; /*52px*/
+     font-size: 325%; /*52px*/
   }
   h2 {
-     font-size: 2em; /*3px section headers*/
+     font-size: 200%; /*32px section headers*/
   }
   h3 {
-     font-size: 1.5em; /*24px banner description*/
+     font-size: 150%; /*24px banner description*/
      font-weight: 300;
   }
   h4 {
-      font-size: 1.25em; /*20px subheaders*/
+      font-size: 125%; /*20px subheaders*/
   }
   h5 {
-     font-size: 0.875em; /*14px sub-subheaders CAP*/
+     font-size: 87.5%; /*14px sub-subheaders CAP*/
   }
   h6 {
-     font-family: 'Muli', sans-serif;
-     font-size: 1.125em; /*18px quote*/ 
+     font-family: 'Lato', sans-serif;
+     font-size: 112.5%; /*18px quote*/ 
      font-weight: 300;
   }
   p {
-     font-size: 1.125em; /*18px*/
+     font-size: 112.5%; /*18px*/
      line-height: 1.875em; /*26px*/
+     font-weight: 300;
      color: #474747;
   }
   main ul {
-    font-size: 1em;
+    font-size: 112.5%;
   }
   .container {
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
     width: 60%;
   }
   .one-half {
-    width: 45%; 
+    width: 50%; 
   }
-  .menu {
-     background-color: #F9F9F9;
-     display: block;
-     height: auto;
-     padding-bottom: 0;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 999;
-  }
-  .logo {
-    display: block;
-    text-align: left;
-    margin-left: 5em;
-  }
-  nav ul {
-    overflow: hidden;
-    text-align: right;
-    padding: 1%;
-    margin-left: 0;
-    margin-top: 1.25em;
-    -webkit-transition: max-height 0.4s;
-    -ms-transition: max-height 0.4s;
-    -moz-transition: max-height 0.4s;
-    -0-transition: max-height 0.4s;
-    transition: max-height 0.4s;
-  }
-  nav ul li {
-    display: inline;
-    text-transform: uppercase;
-    font-family: 'Muli', sans-serif;
-    font-size: 1em;
-    font-weight: 300;
-    padding-right: 10%;
-    padding-left: 10%;
-    margin-right: auto;
-    margin-left: auto;
-    letter-spacing: 1px;
-    color: #fff;
-  }
-
   .intro {
-    background: url(../images/caperstudybanner.png);
+    background: url(../images/valonustudybanner.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -550,14 +564,10 @@ ul.icons li {
     padding-left: 120px;
     padding-bottom: 40px;
   }
-  .overview ul {
-   font-size: 1em; /*16px*/
-   line-height: 1.25em;
-   font-weight: 300;
-  }
   .overviewleft img {
+    margin: 0;
     height: auto;
-    width: 75%;
+    width: 85%;
   }
   .overviewright {
     float: right;
@@ -565,46 +575,30 @@ ul.icons li {
   }
   .storyquote {
     font-size: 28px;
-    padding-left: 175px;
-    padding-right: 175px;
+    padding-left: 150px;
+    padding-right: 150px;
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  #notebook, #flat1, #flat2 {
+  #identitylogo {
+  width: 25%;
+  }
+  #brainstorm1, #brainstorm2 {
     float: left;
-    width: 48%;
+    width: 45%;
+    padding: 10px;
   }
-  #notebook {
-    margin-right: 15px;
-  }
-  #flat1 {
-    margin-bottom: 15px;
-  }
-  #flat2 {
-    margin-bottom: 15px;
-  }
-  .contentclear {
-    clear: both;
-    float: none;
+  .valonutype {
+    display: block;
+    float: left;
+    width: 45%;
+    padding: 10px;
   }
   #color {
     width: 75%;
     margin-left: auto;
     margin-right: auto;
   }
-  .test1cover, .test2cover {
-  border: 25px solid #00A3D5;
-  }
-  #intro5 {
-    margin-top: -120px;
-    padding-left: 35px;
-  }
-
-
-
-
-
-
   .socialmedia ul {
     padding-left: 130px;
   }
@@ -617,7 +611,7 @@ ul.icons li {
     width: 60%;
   }
   .one-half {
-    width: 45%;
+    width: 50%;
   }
   .one-third {
     width: 32.33333%;
@@ -627,6 +621,9 @@ ul.icons li {
   .one-fourth {
     width:21%;
    }
+   nav ul {
+    float: right;
+  }
 }
 
 

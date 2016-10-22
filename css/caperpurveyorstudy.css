@@ -67,46 +67,47 @@ html, body{
    padding: 0;
  }
 body {
- font-family: 'Muli', sans-serif;
+ font-family: 'Merriweather', serif;
+ font-size: 1em;
 }
 h1, h2, h3, h4, h5 {
  font-family: 'Lato', sans-serif;
  font-weight: 700;
 }
 h1 {
- font-size: 2.25em; /*34px*/
+ font-size: 212.5%; /*34px*/
  font-weight: 400;
 }
 h2 {
- font-size: 1.375em; /*22px section headers*/
+ font-size: 137.5%; /*22px section headers*/
+ padding-top: 35px;
 }
 h3 {
- font-size: 1.125em; /*18px banner description*/
+ font-size: 112.5%; /*18px banner description*/
  font-weight: 300;
 }
 h4 {
-  font-size: 1em; /*16px subheaders*/
+  font-size: 100%; /*16px subheaders*/
 }
 h5 {
- font-size: 0.75em; /*12px sub-subheaders CAP*/
+ font-size: 75%; /*12px sub-subheaders CAP*/
 }
 h6 {
- font-family: 'Muli', sans-serif;
- font-size: 1.125em; /*18px quote*/ 
+ font-family: 'Lato', sans-serif;
+ font-size: 112.5%; /*18px quote*/ 
  line-height: 1.5em;
  font-weight: 300;
 }
 p {
- font-size: 0.9375em; /*145x*/
- line-height: 1.5em; /*24px*/
- font-weight: 400;
+ font-size: 87.5%; /*14 px*/
+ line-height: 1.625em; /*24px*/
+ font-weight: 300;
  color: #474747;
 }
-.fa { font-family: 'FontAwesome' !important; }
 main ul {
- font-size: 0.875em; /*14px*/
- font-family: 'Muli', sans-serif;
- line-height: 1.25em;
+ font-size: 87.5%; 
+ font-family: 'Lato', sans-serif;
+ line-height: 1.65em;
  font-weight: 300;
  list-style-type: square;
  list-style-position: inside;  
@@ -116,6 +117,11 @@ main ul {
  text-align: left;
  max-width: 85%;
 }
+footer {
+  font-family: 'Lato', sans-serif;
+}
+.fa { font-family: 'FontAwesome' !important; }
+
 
 
 
@@ -123,8 +129,10 @@ main ul {
  .container {
    margin-right: auto;
    margin-left: auto;
-   padding-top: 1em;
-   padding-bottom: 1em;
+   padding-top: 2em;
+   padding-bottom: 2em;
+   margin-top: 2em;
+   margin-bottom: 2em;
    position: relative;
    width: 85%;
  }
@@ -151,7 +159,7 @@ main ul {
    color:#474747;
    display: block;
    margin: auto;
-   font-family: 'Muli';
+   font-family: 'Lato';
    font-size: 0.875em; /*14px*/
    font-weight: 300;
    padding-bottom: 2.5px;
@@ -199,7 +207,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Muli', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-size: 1em;
   font-weight: 300;
   padding: 10px 80px;
@@ -238,7 +246,7 @@ nav a:hover {
     padding-top: 1em;
     cursor: pointer;
     text-align: center;
-    font-family: 'Muli', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1em;
     font-weight: 300;
   }
@@ -307,6 +315,9 @@ nav a:hover {
   padding: 20px;
   margin-top: 20px;
 }
+.overview p {
+  font-family: 'Lato', sans-serif;
+}
 .overview ul {
   margin: 0;
 }
@@ -330,7 +341,6 @@ nav a:hover {
   background-color: #00597A;
   clear: both;
   color: #ffffff;
-  font-family: 'Muli', sans-serif;
   font-weight: 300;
   padding-left: 20px;
   padding-right: 20px;
@@ -346,6 +356,7 @@ nav a:hover {
 }
 .approach {
   background-color: #F6F6F6;
+  margin-bottom: 0;
 }
 .approach h2 {
   padding-top: 2em;
@@ -385,6 +396,7 @@ nav a:hover {
 }
 .next {
   background-color: #F6F6F6;
+  margin-top: -5px;
 }
 
 
@@ -463,44 +475,44 @@ ul.icons li {
 
 @media all and (min-width: 48em) { /*768px*/   
   h1 {
-     font-size: 3.25em; /*52px*/
+     font-size: 325%; /*52px*/
   }
   h2 {
-     font-size: 2em; /*3px section headers*/
+     font-size: 200%; /*32px section headers*/
   }
   h3 {
-     font-size: 1.5em; /*24px banner description*/
+     font-size: 150%; /*24px banner description*/
      font-weight: 300;
   }
   h4 {
-      font-size: 1.25em; /*20px subheaders*/
+      font-size: 125%; /*20px subheaders*/
   }
   h5 {
-     font-size: 0.875em; /*14px sub-subheaders CAP*/
+     font-size: 87.5%; /*14px sub-subheaders CAP*/
   }
   h6 {
-     font-family: 'Muli', sans-serif;
-     font-size: 1.125em; /*18px quote*/ 
+     font-family: 'Lato', sans-serif;
+     font-size: 112.5%; /*18px quote*/ 
      font-weight: 300;
   }
   p {
-     font-size: 1.125em; /*18px*/
+     font-size: 112.5%; /*18px*/
      line-height: 1.875em; /*26px*/
+     font-weight: 300;
      color: #474747;
   }
   main ul {
-    font-size: 1em;
+    font-size: 112.5%;
   }
   .container {
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
     width: 60%;
   }
   .one-half {
     width: 50%; 
-  }
-    nav ul {
-    float: right;
   }
   .intro {
     background: url(../images/purveyorstudybanner.png);
@@ -526,11 +538,6 @@ ul.icons li {
     padding-right: 80px;
     padding-left: 120px;
   }
-  .overview ul {
-   font-size: 1em; /*16px*/
-   line-height: 1.25em;
-   font-weight: 300;
-  }
   .overviewleft img {
     height: auto;
     width: 75%;
@@ -546,16 +553,12 @@ ul.icons li {
     padding-top: 100px;
     padding-bottom: 100px;
   }
+  .approach {
+    margin-bottom: 0;
+  }
   .test1cover, .test2cover {
   border: 25px solid #00A3D5;
   }
-
-
-
-
-
-
-
   .socialmedia ul {
     padding-left: 130px;
   }
@@ -578,6 +581,9 @@ ul.icons li {
   .one-fourth {
     width:21%;
    }
+    nav ul {
+    float: right;
+  }
 }
 
 
