@@ -157,6 +157,10 @@ footer {
    text-decoration: none;
    width: 180px;
 }
+.btn:hover {
+  color: #ffffff;
+  background-color: #FBC26E;
+}
 
  /* HEADER NAV */
 * {
@@ -436,10 +440,6 @@ nav a:hover {
 .about span {
   font-weight: 700;
   color: #006E95;
-}
-.about a:hover {
-  color: #ffffff;
-  background-color: #FBC26E;
 }
 
 
