@@ -102,7 +102,7 @@ p {
  font-size: 87.5%; /*14 px*/
  line-height: 1.625em; /*24px*/
  font-weight: 300;
- color: #474747;
+ color: #333;
 }
 footer {
   font-family: 'Lato', sans-serif;
@@ -417,7 +417,6 @@ ul.icons li {
      font-size: 112.5%; /*18px*/
      line-height: 1.875em; /*26px*/
      font-weight: 300;
-     color: #474747;
   }
   .container {
     padding-top: 1em;
