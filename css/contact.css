@@ -137,7 +137,7 @@ footer {
 
 
 /* BUTTONS */
-.btnsubmit {
+.btn {
    background: #00597A;
    border: 2px solid #00597A;
    color:#ffffff;
@@ -145,11 +145,9 @@ footer {
    font-family: 'Lato';
    font-size: 0.875em; /*14px*/
    font-weight: 400;
-   padding: 10px 15px 10px 15px;
-   line-height: 25px;
-   text-align: center;
+   line-height: 30px;
    text-decoration: none;
-   width: 100px;
+   width: 150px;
 }
 
  /* HEADER NAV */
@@ -298,18 +296,13 @@ input {
   outline: none;
   width: 100%;
 }
-#entry_1856128875 {
+#entry_887331053 {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-#entry_150906251 {
+#entry_747277437 {
   margin-top: 15px;
   margin-bottom: 20px;
-}
-#message {
-  margin-bottom: 20px;
-}
-textarea {
   margin-top: 15px;
   border: 1px solid #EFEFEF;
   height: 80px;
@@ -354,7 +347,7 @@ footer {
   padding: 8px;
 }
 ul.icons {
-  cursor: default;
+  cursor: pointer;
   list-style: none;
   padding-left: 0;
 }

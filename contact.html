@@ -4,7 +4,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
-   <title>Caper Case Study</title>
+   <title>Contact | Julia Matsuoka</title>
 
  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
@@ -19,7 +19,7 @@
  <link rel="stylesheet" href="css/animate.css">
 
  <!-- GOOGLE FORM CONTACT-->
-<meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform"><meta property="og:image" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform#responses"><meta property="og:image:width" content="200"><meta property="og:image:height" content="200">
+<meta property="og:title" content="Valonu Partner Application"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/e/1FAIpQLSeaNjpW40B0Kz_b1hvRlnFxxRqC-2GgEk1jGfEzHsNgmCHE-Q/viewform?usp=embed_facebook"><meta property="og:image" content="https://lh6.googleusercontent.com/Y_CBUICGUfb0aQRdPDSNHzbFWFG3hjjjIkSqOhSHJ_hsle6MknlpfzZnPtBmqJB1ZT8=w1200-h630-p"><meta property="og:image:width" content="200"><meta property="og:image:height" content="200">
 
 
 
@@ -37,6 +37,7 @@
   <div id="mobile-icon">MENU<hr></div>
   <ul>
     <li><a href="index.html">WORK</a></li>
+    <li><a href="about.html">ABOUT</a></li>
     <li><a href="contact.html">CONTACT</a></li>
   </ul>
 </div>
@@ -47,32 +48,38 @@
 <main>
 <div class="intro container">
     <h1>Say hello.<br></h1>
+    <br><br>
     <h3>Find me on <a href="https://www.linkedin.com/in/juliamatsuoka"><span>LinkedIn</span></a>,  <a href="https://www.instagram.com/julia.mats/"><span>Instagram</span></a>, or email me at <a href="mailto:cheers.julia@gmail.com" target="_blank"><span>cheers.julia@gmail.com</span></a>.
-    <br>Otherwise, drop me a line below.</h3>
+    <br>
+    Otherwise, drop me a line below.</h3>
 </div>
 
 <div class="contactform container">
 <!-- iFrame redirects user to confirmation page instead of Google confirmation page -->
     <iframe name="hidden_frame" id="hidden_iframe" style="display:none;" onload="if(submitted)
-              {window.location='confirm.html';}"></iframe>
+              {window.location='index.html';}"></iframe>
 <!-- Point the target at the name of the iframe, should test with backbone-type events -->
-    <form role="form" action="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/formResponse" method="POST" id="ss-form" target="hidden_frame" onsubmit="submitted=true;">
+    <form role="form" action="https://docs.google.com/forms/d/e/1FAIpQLSeaNjpW40B0Kz_b1hvRlnFxxRqC-2GgEk1jGfEzHsNgmCHE-Q/formResponse" method="POST" id="ss-form" target="hidden_frame" onsubmit="submitted=true;">
 
     <form>
     <div>
-      <label for="name">Name</label><input type="text" class="form-control" name="entry.1856128875" value="" id="entry_1856128875" dir="auto" aria-label="Name" title="">
+      <!-- <label for="name">Name</label><input type="text" class="form-control" name="entry.1856128875" value="" id="entry_1856128875" dir="auto" aria-label="Name" title="">
      </div>
      <div>
       <label for="email">Email</label><input type="text" class="formcontrol" name="entry.150906251" value="" id="entry_150906251" dir="auto" aria-label="Email">
      </div>
      <div id="message">
-      <label for="message">Your Message</label><br><textarea name="entry.224458628" dir="auto" aria-label="Message"></textarea>
+      <label for="message">Your Message</label><br><textarea name="entry.224458628" dir="auto" aria-label="Message"></textarea> -->
+        EMAIL
+        <input type="text" class="form-control" name="entry.887331053" value="" class="ss-q-short" id="entry_887331053" dir="auto" aria-label="Email" title="" placeholder="">
+        <br><br>
+        MESSAGE
+        <textarea class="form-control" name="entry.747277437" value="" class="ss-q-short" id="entry_747277437" dir="auto" aria-label="Full Name  " title="" placeholder=""></textarea>
+<!-- Must keep submit button -->
+        <input type="submit" class="btn" name="submit" value="SAY HELLO">
 
-
-      <!-- <input type="text" name="message"> -->
      </div>
     </form>
-    <a href="" class="btnsubmit">SAY HELLO</a>
 </div>
 </main>
 
