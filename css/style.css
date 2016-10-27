@@ -319,12 +319,12 @@ nav a:hover {
   margin-bottom: 25px;
 }
 .valonustudy {
-  background-color: #00A3D5;
-  margin-bottom: 25px;
-}
-.caperpurveyorstudy {
   background-color: #006E95;
   margin-bottom: 80px;
+}
+.caperpurveyorstudy {
+  background-color: #00A3D5;
+  margin-bottom: 25px;
 }
 .caperpurveyorstudy img {
   padding-left: 25px;
@@ -427,6 +427,7 @@ nav a:hover {
 }
 .about > h2 {
   padding-bottom: 20px;
+  clear: both
 }
 .about > p {
   padding-bottom: 80px;
@@ -593,7 +594,7 @@ ul.icons li {
   .caperstudy {
     margin-left: 0;
   }
-  .caperpurveyorstudy {
+  .valonustudy {
     margin-right: 0;
     float: right;
   }
