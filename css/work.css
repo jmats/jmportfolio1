@@ -271,6 +271,9 @@ nav a:hover {
   margin-bottom: 80px;
   padding-top: 75px;
 }
+.intro h1 {
+  padding-top: 100px;
+}
 .intro p {
   padding-bottom: 25px;
 }

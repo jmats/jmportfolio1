@@ -264,10 +264,9 @@ nav a:hover {
 .intro {
   width: 90%;
   margin-left: auto;
-  margin-right: auto;
-}
-.intro h1 {
-  padding-top: 100px;
+  margin-right: auto;  
+  margin-bottom: 30px;
+  padding-top: 75px;
 }
 .intro h3 {
   line-height: 1.5em;
@@ -412,17 +411,18 @@ ul.icons li {
      font-weight: 300;
   }
   .container {
-    padding-top: 1em;
-    padding-bottom: 1em;
     width: 80%;
   }
   .one-half {
     width: 50%; 
   }
-  .intro h1 {
-    padding-top: 100px;
+  .intro {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 80px;
+    padding-top: 140px;
   }
-
   .socialmedia ul {
     padding-left: 130px;
   }
@@ -432,7 +432,7 @@ ul.icons li {
 /*Breakpoint */
 @media all and (min-width: 67.81em) { /*1086px */
   .container {
-    width: 60%;
+    width: 65%;
   }
   .one-half {
     width: 50%;
