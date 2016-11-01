@@ -264,19 +264,69 @@ nav a:hover {
 }
 
 /* INTRO */
-.intro {
+.uxdesign {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
   padding-top: 75px;
 }
-.intro h1 {
+.uxdesign h1 {
   padding-top: 100px;
 }
-.intro p {
+.uxdesign p {
   padding-bottom: 25px;
 }
+
+
+
+
+
+.responsive-image {
+  max-width: 100%;
+}
+.cell img {
+  display: block;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width:50%;
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell {
+    width:calc (100%/3);
+  }
+}
+.cell {
+  margin: 1rem;
+}
+
+@media screen and (min-width: 600px){
+  .cell {
+    width: calc(50% - 2rem);
+  }
+}
+@media screen and (min-width: 1000px){
+  .cell{
+    width: calc(33.3333% - 2rem);
+  }
+}
+
+
+
+
+
+
 
 
 /* FOOTER */
@@ -385,8 +435,8 @@ ul.icons li {
   .one-half {
     width: 50%; 
   }
-  .intro {
-    margin-top: 70px;
+  .uxdesign {
+    margin-top: 130px;
     width: 60%;
   }
   .socialmedia ul {

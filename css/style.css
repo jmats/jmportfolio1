@@ -520,11 +520,11 @@ ul.icons li {
      font-weight: 400;
   }
   h3 {
-     font-size: 150%; /*24px banner description*/
+     font-size: 162.5%; /*26px banner description*/
      font-weight: 400;
   }
   h4 {
-      font-size: 150%; /*20px subheaders*/
+      font-size: 112.5%; /*18px subheaders*/
       font-weight: 300;
   }
   h5 {
