@@ -83,7 +83,7 @@ h2 {
  font-weight: 400;
 }
 h3 {
- font-size: 137.5%; 
+ font-size: 150%; /*24px */
  font-weight: 300;
 }
 h4 {
@@ -167,7 +167,6 @@ footer {
 .menu {
    background-color: #ffffff;
    height: auto;
-/*   position: fixed;*/
    top: 0;
    width: 100%;
    z-index: 999;
@@ -179,15 +178,10 @@ footer {
   text-decoration: none;
   color: #202020;
 }
-/*.scrolling {
-  background-color: #f1f1f1; opacity: 0.95;
-  transition-duration: 0.1s;
-}*/
 nav ul {
   overflow: hidden;
   text-align:right;
-  padding: 1%;
-  margin-left: 0;
+  padding-right: 20%;
   -webkit-transition: max-height 0.4s;
   -ms-transition: max-height 0.4s;
   -moz-transition: max-height 0.4s;
@@ -196,9 +190,9 @@ nav ul {
 }
 nav ul li {
   display: inline-block;
-  font-size: 1em;
-  font-weight: 300;
-  padding: 10px 80px;
+  /*font-weight: 300;*/
+  padding-top: 25%;
+  padding-left: 10%;
   letter-spacing: 1px;
   color: #202020;
 }
@@ -215,13 +209,13 @@ nav a:hover {
   position: relative;
 }
 
-/*@media all and (min-width: 42.5em) {
+@media all and (min-width: 67.75em) {
   #mobile-icon { 
     display: none; 
   } 
-}*/
+}
 
-/*@media all and (max-width: 42.5em) {*/
+@media all and (max-width: 67.75em) {
   #mobile-icon {
     display: block;
     padding-top: 1em;
@@ -255,6 +249,7 @@ nav a:hover {
     box-sizing: border-box;
     width: 100%;
     padding-top: 30px;
+    padding-left: 0;
     text-align: center;
   }
   nav ul li a {
@@ -265,7 +260,7 @@ nav a:hover {
       width: 100%;
       color: #FBC26E;
     }
-/*}*/
+}
 
 
 /* INTRO */
@@ -278,7 +273,6 @@ nav a:hover {
 .intro img {
   display: block;
   padding-top: 30px;
-  padding-bottom: 15px;
 }
 #signaturelarge {
   display: none;
@@ -292,6 +286,7 @@ nav a:hover {
   text-align: left;
   color: #202020;
   font-weight: 300;
+  padding-top: 5%;
 }
 
 /* CASE STUDIES */
@@ -305,7 +300,7 @@ nav a:hover {
   color: #FFFFFF;
 }
 .casestudies h3, h4 {
-  padding-left: 20px;
+  padding-left: 10%;
 }
 .box {
   cursor: pointer;
@@ -423,7 +418,8 @@ nav a:hover {
 /* ABOUT */
 .about {
   margin-top: 50px;
-  padding: 20px;
+  padding-right: 10%;
+  padding-left: 10%;
 }
 .about > h2 {
   padding-bottom: 20px;
@@ -443,11 +439,11 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-  padding-left: 20px;
-  padding-top: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 20%;
   padding-bottom: 100px;
   list-style-type: none;
-  margin-top: 20px;
 }
 footer a:hover {
   color: #fff;
@@ -550,36 +546,15 @@ ul.icons li {
     width: 60%;
   }
   .one-half {
-     width: 50%;
+     width: 100%;
   }
-  .intro {
-     min-height: 100px;
-     padding-left: 10%;
-     padding-right: 10%;
+  footer {
+    padding-top: 10%;
   }
-  .intro h2 {
-    text-align: left;
-    font-size: 38px;
-  }
-  #signaturelarge {
-    display: block;
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
-  #signaturemobile {
-    display: none;
-  }
-  .about{
-    width: 80%;
-    margin: auto;
-    padding-top: 50px;
-  }
-  .socialmedia ul {
-    padding-left: 15%;
-  }
+
 }
 /*Breakpoint */
-@media all and (min-width: 67.81em) {
+@media all and (min-width: 67.75em) {
   .container {
     width: 100%;
   }
@@ -594,6 +569,32 @@ ul.icons li {
   .one-fourth {
     width:21%;
    }
+  .intro {
+     min-height: 100px;
+     padding-left: 10%;
+     padding-right: 10%;
+     clear: both;
+  }
+  .intro h2 {
+    text-align: left;
+    font-size: 38px;
+  }
+  #signaturelarge {
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    padding-left: 20%;
+  }
+  #signaturemobile {
+    display: none;
+  }
+  .about{
+    margin: auto;
+    padding-top: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
+  }
+
   .caperstudy {
     margin-left: 0;
   }
