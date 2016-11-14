@@ -483,7 +483,7 @@ ul.icons li {
   padding: 0 1em 0 0;
 }
 .copyright {
-  font-size: 1em;
+  font-size: 0.9em;
   padding-bottom: 20px;
 }
 .copyright p {
@@ -510,7 +510,7 @@ ul.icons li {
    }
 }
 
-@media all and (min-width: 42.5em) {
+@media all and (min-width: 42.5em) { /* 680px */
   h1 {
      font-size: 325%; /*52px*/
   }

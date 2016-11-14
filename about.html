@@ -46,7 +46,7 @@
 
 
 <main>
-<section class="intro">
+<section class="intro container">
   <h2>Hi there! I'm Julia.<br>_<br></h2>
   <br>
   <p>I'm a product designer based in Brooklyn, New York. My design journey (from graphic, to web, to UX, then to Product) was meandering but  delightful and full of surprises. I started out in business operations management because I enjoyed the challenge of ensuring that multiple functions of a company integrated seamlessly together - in short, cross-functional leadership and ownership. 
@@ -63,7 +63,7 @@
 
 
 
-<footer>
+<footer class="container">
   <li class="one-half socialmedia" id="contact">
     <ul class="icons">
     <li>
@@ -83,6 +83,25 @@
 
  </footer>
 
+
+<!-- CHANGE MENU BG ON SCROLL -->
+<script src="js/jquery-3.1.0.slim.min.js"></script>
+<script type="text/javascript">
+$(window).scroll(function() {
+if ($(window).scrollTop() > 50 ){
+$('.menu').addClass('scrolling');
+} else {
+$('.menu').removeClass('scrolling');
+}; 
+});
+
+$('.scroll').on('click', function(e){ 
+e.preventDefault()
+$('html, body').animate({
+scrollTop : $(this.hash).offset().top
+}, 1500);
+});
+</script>
 
 
 

@@ -117,7 +117,7 @@ footer {
    padding-top: 1em;
    padding-bottom: 1em;
    position: relative;
-   width: 90%;
+   width: 85%;
  }
  .container:before,
  .container:after {
@@ -159,7 +159,7 @@ footer {
   padding: 0;
 }
 .menu {
-   background-color: #F9F9F9;
+   background-color: #FFFFFF;
    height: auto;
    position: fixed;
    top: 0;
@@ -172,6 +172,10 @@ footer {
 .menu a {
   text-decoration: none;
   color: #474747;
+}
+.scrolling {
+  background-color: #F9F9F9; opacity: 0.95; /*white*/
+  transition-duration: 0.1s;
 }
 nav ul {
   overflow: hidden;
@@ -265,7 +269,6 @@ nav a:hover {
 
 /* INTRO */
 .intro {
-  width: 90%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 80px;
@@ -278,11 +281,7 @@ nav a:hover {
 
 /* FOOTER */
 footer {
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 100px;
   list-style-type: none;
-  margin-top: 20px;
 }
 footer a:hover {
   color: #fff;
@@ -322,11 +321,8 @@ ul.icons li {
   padding: 0 1em 0 0;
 }
 .copyright {
-  font-size: 1em;
+  font-size: 0.9em;
   padding-bottom: 20px;
-}
-.copyright p {
-  padding-right: 50px;
 }
 .copyright span {
   font-weight: 700;
@@ -345,12 +341,12 @@ ul.icons li {
      width: 100%;
    }
    .one-fourth {
-     width:100%;
+     width: 100%;
    }
 }
 
 
-@media all and (min-width: 48em) { /*768px*/   
+@media all and (min-width: 42.5em) { /*768px*/   
   h1 {
      font-size: 325%; /*52px*/
   }
@@ -380,23 +376,19 @@ ul.icons li {
   .container {
     padding-top: 1em;
     padding-bottom: 1em;
-    width: 60%;
+    width: 80%;
   }
   .one-half {
-    width: 50%; 
+    width: 100%; 
   }
   .intro {
     margin-top: 70px;
-    width: 60%;
-  }
-  .socialmedia ul {
-    padding-left: 130px;
   }
 
 }
 
 /*Breakpoint */
-@media all and (min-width: 67.81em) { /*1086px */
+@media all and (min-width: 67.75em) { 
   .container {
     width: 60%;
   }
