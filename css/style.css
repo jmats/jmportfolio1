@@ -423,7 +423,8 @@ nav a:hover {
 }
 .about > h2 {
   padding-bottom: 20px;
-  clear: both
+  clear: both;
+  font-weight: lighter;
 }
 .about > p {
   padding-bottom: 80px;
@@ -551,7 +552,6 @@ ul.icons li {
   footer {
     padding-top: 10%;
   }
-
 }
 /*Breakpoint */
 @media all and (min-width: 67.75em) {
@@ -602,7 +602,9 @@ ul.icons li {
     margin-right: 0;
     float: right;
   }
-
+   .copyright p {
+    padding-left: 100px;
+  }
 }
 
 

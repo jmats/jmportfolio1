@@ -582,6 +582,9 @@ ul.icons li {
     nav ul {
     float: right;
   }
+   .copyright p {
+    padding-left: 100px;
+  }
 }
 
 
