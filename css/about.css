@@ -632,10 +632,10 @@ ul.icons li {
 }
   #signaturelarge {
     display: block;
-    padding-top: 10%;
+    padding-top: 13%;
     padding-bottom: 15px;
     padding-left: 20%;
-    max-width: 15%;
+    max-width: 12%;
     height: auto;
   }
   #signaturefullwidth {
