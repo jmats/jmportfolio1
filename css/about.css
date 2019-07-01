@@ -620,6 +620,8 @@ ul.icons li {
   .intro {
      padding-left: 10%;
      padding-right: 10%;
+     padding-top: 3%;
+     clear: both;
   }
   .intro-subtitle {
     margin-bottom: 1.1rem;
