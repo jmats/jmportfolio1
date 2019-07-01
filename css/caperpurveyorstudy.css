@@ -297,7 +297,7 @@ nav a:hover {
   background-repeat: no-repeat;
   width: 100%;
   z-index: -1;
-  min-height: 500px;
+  min-height: 100vh;
 }
 .intro h1, h3 {
   color: #ffffff;
@@ -527,7 +527,7 @@ ul.icons li {
     background-repeat: no-repeat;
     width: 100%;
     z-index: -1;
-    min-height: 600px;
+    min-height: 100vh;
   }
   .intro h1, h3 {
     padding-left: 120px;
