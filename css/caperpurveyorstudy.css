@@ -71,7 +71,7 @@ body {
  font-size: 1em;
 }
 h1, h2, h3, h4, h5 {
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
 }
 h1 {
  font-size: 212.5%; /*34px*/
@@ -92,7 +92,7 @@ h5 {
  font-size: 75%; /*12px sub-subheaders CAP*/
 }
 h6 {
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-size: 112.5%; /*18px quote*/ 
  line-height: 1.5em;
  font-weight: 300;
@@ -105,7 +105,7 @@ p {
 }
 main ul {
  font-size: 87.5%; 
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  line-height: 1.65em;
  font-weight: 300;
  list-style-type: square;
@@ -117,7 +117,7 @@ main ul {
  max-width: 85%;
 }
 footer {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .fa { font-family: 'FontAwesome' !important; }
 
@@ -158,7 +158,7 @@ footer {
    color:#474747;
    display: block;
    margin: auto;
-   font-family: 'Lato';
+   font-family: 'Montserrat';
    font-size: 0.875em; /*14px*/
    font-weight: 300;
    padding-bottom: 2.5px;
@@ -206,7 +206,7 @@ nav ul {
 nav ul li {
   display: inline-block;
   text-transform: uppercase;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   font-weight: 300;
   padding: 10px 80px;
@@ -228,6 +228,10 @@ nav a:hover {
 #logosignature {
   padding-top: 5px;
   margin-left: 4.25em;
+  padding-top: 5px;
+  margin-left: 4.25em;
+  max-width: 4%;
+  height: auto;
 }
 
 @media all and (min-width: 67.81em) {
@@ -245,7 +249,7 @@ nav a:hover {
     padding-top: 1em;
     cursor: pointer;
     text-align: center;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 300;
   }
@@ -313,7 +317,7 @@ nav a:hover {
   margin-top: 20px;
 }
 .overview p {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .overview ul {
   margin: 0;
@@ -389,7 +393,7 @@ nav a:hover {
 }
 #nextbtn {
   padding-top: 30px;
-  width: 115px;
+  width: 130px;
 }
 .next {
   background-color: #F6F6F6;
@@ -491,7 +495,7 @@ ul.icons li {
      font-size: 87.5%; /*14px sub-subheaders CAP*/
   }
   h6 {
-     font-family: 'Lato', sans-serif;
+     font-family: 'Montserrat', sans-serif;
      font-size: 112.5%; /*18px quote*/ 
      font-weight: 300;
   }

@@ -5,13 +5,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <meta charset="UTF-8">
    <link rel="icon" href="images/jmlogo.png" />
-   <title>About | Julia Matsuoka</title>
+   <title>Julia Matsuoka</title>
 
  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400" rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
 
+  <link href="https://fonts.googleapis.com/css?family=Parisienne" rel="stylesheet">
  
  <!-- CSS -->
  <link rel="stylesheet" href="css/normalize.css">
@@ -19,8 +20,7 @@
  <link rel="stylesheet" href="css/font-awesome.css"> 
  <link rel="stylesheet" href="css/animate.css">
 
- <!-- GOOGLE FORM CONTACT-->
-<meta property="og:title" content="Contact"><meta property="og:type" content="article"><meta property="og:site_name" content="Google Docs"><meta property="og:url" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform"><meta property="og:image" content="https://docs.google.com/forms/d/e/1FAIpQLScLy72-gkHkHnXmSTUoAPR-BJUicdVPQOqipd39O564_oaJ5g/viewform#responses"><meta property="og:image:width" content="200"><meta property="og:image:height" content="200">
+ <script src="js/jquery-3.1.0.slim.min.js"></script>
 
 <!-- GOOGLE ANALYTICS -->
 <script>
@@ -34,49 +34,45 @@
 
 </script>
 
-
 </head>
 
 
+
 <body>
-<!-- HEADER -->
+
 <header>
-<!-- Menu -->
-<nav>
-<div class="menu">
-  <a href="index.html"><img id="logosignature" src="images/logosignature.png"></a>
-  <div id="mobile-icon">MENU<hr></div>
+<nav class="menu">
+<div class="signature one-half">
+  <a href="index.html"><img id="signaturelarge" src="images/signature.png" /></a>
+</div>
+<div class="menu one-half">
+  <div id="mobile-icon">MENU<br><hr></div>
   <ul>
     <li><a href="index.html">WORK</a></li>
     <li><a href="about.html">ABOUT</a></li>
-    <li><a href="contact.html">CONTACT</a></li>
+    <!---<li><a href="contact.html">CONTACT</a></li>--->
   </ul>
 </div>
 </nav>
-</header>
 
-
-<main>
-<section class="intro container">
-  <h2>Hi there! I'm Julia.<br>_<br></h2>
+<div class="intro">
+  <div class="intro-inner">
+  <h2>Hello, I'm Julia.<br>_<br></h2>
   <br>
   <p>I'm a product manager based in California, with a background in UX design and business operations management. 
-  <br><br>Most recently, I was working with brickineers at <a href="https://www.brickly.com">brickly</a>, focusing on building a fun product for the interlocking bricks community and meeting LEGO lovers. Before that, I traversed the NYC food world with Caper, leading operations and product, and was also part of NYU’s Business Operations team for the Development and Alumni Relations department, working on their financial and business processes.
-  <br><br>
-  These days, I'm at <a href="https://www.nuorder.com">NuORDER</a>, working with a stellar team to revolutionize the wholesale industry.
-  <br><br>
+ <br><br>
   Drop me a line and let's chat about how to leverage technology for social good, recipes for homemade ice cream with strange flavor combinations, and what's good at our local public libraries.
   <br><br>
   Thanks for stopping by!
   <br><br>
   </p>
-  <a href="contact.html" class="btn">SAY HELLO <i class="fa fa-hand-peace-o" aria-hidden"true"></i></a>
-</section>
+</div>
+</div>
+</header>
 
 
 
-
-<footer class="container">
+<footer>
   <li class="one-half socialmedia" id="contact">
     <ul class="icons">
     <li>
@@ -88,44 +84,22 @@
     </ul>
   </li>
   <li class="one-half copyright">
-     <p>Designed & Developed &copy; <span>Julia Matsuoka 2017</span></p>
+     <p>Made with &#x2764; in CA</p>
   </li>
 
  </footer>
 
 
-<!-- CHANGE MENU BG ON SCROLL -->
-<script src="js/jquery-3.1.0.slim.min.js"></script>
-<script type="text/javascript">
-$(window).scroll(function() {
-if ($(window).scrollTop() > 50 ){
-$('.menu').addClass('scrolling');
-} else {
-$('.menu').removeClass('scrolling');
-}; 
-});
-
-$('.scroll').on('click', function(e){ 
-e.preventDefault()
-$('html, body').animate({
-scrollTop : $(this.hash).offset().top
-}, 1500);
-});
-</script>
-
-
 
 <!-- RESPONSIVE MENU -->
-<script src="js/jquery-3.1.0.slim.min.js"></script>
-
 <script>
 $(document).ready(function(){
   
   $('#mobile-icon').click( function() {
     $('nav ul').toggleClass("showing");
         // console.log('working');
-  });
 
+  });
 });
 </script>
 

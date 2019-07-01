@@ -67,11 +67,11 @@ html, body{
    padding: 0;
  }
 body {
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-size: 1em;
 }
 h1, h2, h3, h4, h5 {
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-weight: 700;
 }
 h1 {
@@ -93,7 +93,7 @@ h5 {
  font-size: 75%; /*12px sub-subheaders CAP*/
 }
 h6 {
- font-family: 'Lato', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-size: 112.5%; /*18px quote*/ 
  line-height: 1.5em;
  font-weight: 300;
@@ -104,13 +104,13 @@ p {
  font-weight: 300;
 }
 footer {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .fa { font-family: 'FontAwesome' !important; 
   padding-left: 10px;
 
 }
-
+html{scroll-behavior:smooth}
 
 
 
@@ -147,7 +147,7 @@ footer {
    background: transparent;
    border: 2px solid #00597A;
    color: #00597A;
-   font-family: 'Lato';
+   font-family: 'Montserrat';
    font-size: 0.875em; /*14px*/
    font-weight: 400;
    padding: 15px 25px 15px 25px;
@@ -157,6 +157,48 @@ footer {
 .btn:hover {
   color: #ffffff;
   background-color: #00597A;
+}
+.viewwork {
+    display: inline-block;
+    padding: 16px 35px;
+    font-family: inherit;
+    font-size: .96rem;
+    font-weight: 500;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #252525;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 2px;
+    transition: .2s;
+}
+.nk-btn-color-black.nk-btn-outline {
+    color: #000 !important;
+}
+.nk-btn.nk-btn-outline {
+    color: #ffb347 !important;
+}
+.nk-btn-outline {
+    background-color: transparent;
+}
+.nk-btn-color-black {
+    background-color: #000;
+    border-color: #000;
+    color: #fff !important;
+}
+.nk-btn {
+    background-color: #ffb347;
+    border-color: #ffb347;
+    color: #252525 !important;
+}
+.nk-btn, .nk-btn:hover, .nk-btn.hover, .nk-btn:active, .nk-btn.active, .nk-btn:focus {
+    color: #fff;
+    text-decoration: none;
 }
 
  /* HEADER NAV */
@@ -266,27 +308,34 @@ nav a:hover {
 /* INTRO */
 .intro {
   background-color: #FFFFFF;
-  min-height: 300px;
   padding-left: 10%;
   padding-right: 10%;
+  padding-top: 40%;
+  padding-bottom: 25%;
+  text-align: left;
+  min-height: 100vh;
 }
-.intro img {
-  display: block;
-  padding-top: 30px;
+#signaturemobile {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%;
+  height: auto;
+  max-width: 50%;
 }
 #signaturelarge {
   display: none;
 }
-.intro span {
-  font-family: 'Parisienne', cursive;
-  font-size: 1.15em;
-  color: #FBC26E;
+#signaturefullwidth {
+  display: none;
 }
-.intro h2 {
-  text-align: left;
-  color: #202020;
-  font-weight: 300;
-  padding-top: 5%;
+.intro-subtitle {
+    margin-bottom: 1.1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    text-align: left;
 }
 
 /* CASE STUDIES */
@@ -397,7 +446,7 @@ nav a:hover {
 .hovereffect p {
   color: #FFF;
   padding-top: 50px;
-  font-family: 'Lato';
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 300;
   opacity: 0;
@@ -531,7 +580,7 @@ ul.icons li {
      font-size: 87.5%; /*14px sub-subheaders CAP*/
   }
   h6 {
-     font-family: 'Lato', sans-serif;
+     font-family: 'Montserrat', sans-serif;
      font-size: 112.5%; /*18px quote*/ 
      font-weight: 300;
   }
@@ -570,20 +619,32 @@ ul.icons li {
     width:21%;
    }
   .intro {
-     min-height: 100px;
      padding-left: 10%;
      padding-right: 10%;
+     padding-top: 15%;
+     padding-bottom: 10%;
      clear: both;
+     min-height: 100vh;
   }
-  .intro h2 {
-    text-align: left;
-    font-size: 38px;
-  }
+  .intro-subtitle {
+    margin-bottom: 1.1rem;
+    font-family: inherit;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+}
   #signaturelarge {
     display: block;
-    padding-top: 30px;
+    padding-top: 10%;
     padding-bottom: 15px;
     padding-left: 20%;
+    max-width: 15%;
+    height: auto;
+  }
+  #signaturefullwidth {
+    display: inline-block;
+    height: auto;
+    max-width: 25%;
   }
   #signaturemobile {
     display: none;
