@@ -311,7 +311,7 @@ nav a:hover {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 40%;
-  padding-bottom: 25%;
+  padding-bottom: 0;
   text-align: left;
   min-height: 100vh;
 }
@@ -321,13 +321,17 @@ nav a:hover {
   margin-right: auto;
   padding-top: 5%;
   height: auto;
-  max-width: 50%;
+  max-width: 30%;
 }
 #signaturelarge {
   display: none;
 }
 #signaturefullwidth {
   display: none;
+}
+#pencilgif {
+  max-width: 20%;
+  height: auto;
 }
 .intro-subtitle {
     margin-bottom: 1.1rem;
@@ -648,6 +652,10 @@ ul.icons li {
   }
   #signaturemobile {
     display: none;
+  }
+  #pencilgif {
+    max-width: 6%;
+    height: auto;
   }
   .about{
     margin: auto;
